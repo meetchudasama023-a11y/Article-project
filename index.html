@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>My Blog</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    
+    <!-- Header -->
+    <header>
+        <h1>My Blog</h1>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#articles">Articles</a>
+            <a href="#about">About</a>
+        </nav>
+    </header>
+
+
+    <!-- Search -->
+    <section class="search-section">
+        <h2>Find an Article</h2>
+
+        <input
+            type="text"
+            id="searchInput"
+            placeholder="Search articles..."
+        >
+    </section>
+
+
+    <!-- Main Content -->
+    <main>
+
+        <section id="articles">
+
+            <h2>Latest Articles</h2>
+
+            <!-- Article 1 -->
+            <article class="blog-post">
+
+                <h3>How to Start Learning HTML</h3>
+
+                <p class="category">Technology</p>
+
+                <p>
+                    HTML is the basic language used to create websites.
+                    In this article, we learn the basic structure of an HTML page.
+                </p>
+
+                <button onclick="showComments(1)">
+                    Comments
+                </button>
+
+                <div id="comments1" class="comments">
+
+                    <h4>Comments</h4>
+
+                    <p>John: Great article!</p>
+
+                    <input
+                        type="text"
+                        id="commentInput1"
+                        placeholder="Write a comment..."
+                    >
+
+                    <button onclick="addComment(1)">
+                        Add Comment
+                    </button>
+
+                    <div id="newComments1"></div>
+
+                </div>
+
+            </article>
+
+
+            <!-- Article 2 -->
+            <article class="blog-post">
+
+                <h3>Why Learning CSS Is Important</h3>
+
+                <p class="category">Web Design</p>
+
+                <p>
+                    CSS helps us make websites beautiful.
+                    We can change colors, fonts, spacing and layouts using CSS.
+                </p>
+
+                <button onclick="showComments(2)">
+                    Comments
+                </button>
+
+                <div id="comments2" class="comments">
+
+                    <h4>Comments</h4>
+
+                    <p>Sarah: CSS is really fun!</p>
+
+                    <input
+                        type="text"
+                        id="commentInput2"
+                        placeholder="Write a comment..."
+                    >
+
+                    <button onclick="addComment(2)">
+                        Add Comment
+                    </button>
+
+                    <div id="newComments2"></div>
+
+                </div>
+
+            </article>
+
+
+            <!-- Article 3 -->
+            <article class="blog-post">
+
+                <h3>Getting Started With JavaScript</h3>
+
+                <p class="category">Programming</p>
+
+                <p>
+                    JavaScript allows us to make websites interactive.
+                    We can use it to create buttons, forms, searches and much more.
+                </p>
+
+                <button onclick="showComments(3)">
+                    Comments
+                </button>
+
+                <div id="comments3" class="comments">
+
+                    <h4>Comments</h4>
+
+                    <input
+                        type="text"
+                        id="commentInput3"
+                        placeholder="Write a comment..."
+                    >
+
+                    <button onclick="addComment(3)">
+                        Add Comment
+                    </button>
+
+                    <div id="newComments3"></div>
+
+                </div>
+
+            </article>
+
+        </section>
+
+
+        <!-- About -->
+        <section id="about">
+
+            <h2>About This Blog</h2>
+
+            <p>
+                Welcome to my blog! I write about technology,
+                programming and web development.
+            </p>
+
+        </section>
+
+    </main>
+
+
+    <!-- Footer -->
+    <footer>
+
+        <p>
+            &copy; 2026 My Blog. All rights reserved.
+        </p>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
